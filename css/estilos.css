@@ -1,0 +1,332 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ 
+body {
+	background: #e7e5e5;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 16px;
+}
+
+
+header{
+	background: #b6313e;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+	width: 100%;
+	position: center;
+
+}
+
+footer{
+	background: #b6313e;
+	color: #fff;
+	padding: 10px;
+	clear: both;
+}
+
+#imagen{
+	max-width: 100px;
+}
+#obj{
+	width: 30%;
+	margin: 10px;
+	float: left;
+	background: #F44336;
+	font-family: arial, helvetica, sans-serif;
+	text-align: center
+	max-height:350px;
+	color: #fff;
+	width: -webkit-fill-available;
+}
+
+#item{
+	width: 30%;
+	margin: 10px;
+	float: left;
+	background: #F44336;
+	font-family: arial, helvetica, sans-serif;
+	text-align: center
+	max-height:350px;
+	color: #fff;
+}
+#item img{
+	height: 10%;
+	position: left;
+	width: 100%;
+	margin-top:10px; 
+}
+
+ 
+#item .boton {
+	background: none;
+	border: 1px solid #D32F2F;
+	color: #fff;
+	display: inline-block;
+	font-size: 16px;
+	padding: 15px;
+	float: left;
+	text-align: center;
+    margin: inherit;
+}
+
+#obj .boton {
+	background: none;
+	border: 1px solid #D32F2F;
+	color: #fff;
+	display: inline-block;
+	font-size: 16px;
+	padding: 15px;
+	float: left;
+	text-align: center;
+    margin: inherit;
+    margin: inherit;
+    width: inherit;
+}
+
+#titulo{
+	width: 100%;
+	height: 30px;
+	font-size: 15px;
+	text-align: center;
+
+}
+.wrap {
+	margin: auto;
+	max-width: 800px;
+	width: 90%;
+}
+ 
+
+.principal {
+	background: #F44336;
+	border-top: 20px solid #D32F2F;
+	color: #fff;
+	padding: 50px 0;
+	width: 100%;
+}
+ 
+ .principal .formulario {
+	color: #212121;
+	text-align: center;
+}
+ 
+.principal .formulario input[type=text] {
+	margin-bottom: 20px;
+	padding: 10px;
+	width: 100%;
+}
+ 
+.principal .formulario input[type=text].error {
+	border: 5px solid #D32F2F;
+	color: red;
+}
+ 
+.principal .formulario .boton {
+	background: none;
+	border: 1px solid #D32F2F;
+	color: #fff;
+	display: inline-block;
+	font-size: 16px;
+	padding: 15px;
+}
+ 
+.principal .formulario .boton:hover {
+	border: 1px solid #fff;
+}
+ 
+/* - Tareas - */
+.tareas .lista {
+	list-style: none;
+}
+
+ 
+.tareas .lista li {
+	border-bottom: 1px solid #B6B6B6;
+}
+ 
+.tareas .lista li a {
+	color: #212121;
+	display: block;
+	padding: 20px 0;
+	text-decoration: none;
+}
+
+#mapa{
+	width: 100%;
+	height: 500px;
+	
+}
+
+#Mensaje{
+	
+	width: 100%;
+
+}
+
+
+.filtros{
+	display: inline;
+}
+
+@media only screen and (max-width: 1000px) {
+    
+   * {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ 
+body {
+	background: #e7e5e5;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 16px;
+}
+
+.info{
+	font-size: 	30px;
+}
+
+
+#Mensaje{
+	font-size: 	30px;
+	width: 100%;
+
+}
+
+.filtros {
+	display: inline;
+}
+
+
+#item{
+	width: 45%;
+	margin: 10px;
+	float: left;
+	background: #F44336;
+	font-family: arial, helvetica, sans-serif;
+	text-align: center
+	max-height:350px;
+	color: #fff;
+}
+#item img{
+	height: 10%;
+	position: center;
+	width: 100%;
+	margin-top:10px; 
+}
+
+#item .boton {
+    background: none;
+    border: 1px solid #D32F2F;
+    color: #fff;
+    font-size: 16px;
+    padding: 15px;
+    position: static;
+    width: -webkit-fill-available;
+}
+
+#titulo{
+	width: 100%;
+	height: 50px;
+	font-size: 25px;
+	text-align: center;
+
+}
+.wrap {
+	margin: auto;
+	max-width: 800px;
+	width: 90%;
+}
+ 
+
+.principal {
+	background: #F44336;
+	border-top: 20px solid #D32F2F;
+	color: #fff;
+	padding: 50px 0;
+	width: 100%;
+}
+ 
+ .principal .formulario {
+	color: #212121;
+	text-align: center;
+}
+ 
+.principal .formulario input[type=text] {
+	margin-bottom: 20px;
+	padding: 10px;
+	width: 100%;
+}
+ 
+.principal .formulario input[type=text].error {
+	border: 5px solid #D32F2F;
+	color: red;
+}
+ 
+.principal .formulario .boton {
+	background: none;
+	border: 1px solid #D32F2F;
+	color: #fff;
+	display: inline-block;
+	font-size: 16px;
+	padding: 15px;
+}
+ 
+.principal .formulario .boton:hover {
+	border: 1px solid #fff;
+}
+ 
+ div.info{
+ 	font-size: 25px;
+ }
+/* - Tareas - */
+.tareas .lista {
+	list-style: none;
+}
+input#btn-compras.boton{
+	font-size: 35px;
+}
+input#btn-buscar.boton{
+	font-size: 35px;
+}
+input#btn-amigo.boton{
+	font-size: 35px;
+}
+input#btn-contacto.boton{
+	font-size: 35px;
+}
+ input#btn-principal.boton{
+	font-size: 35px
+}
+ input#btn-comprar.boton{
+	font-size: 35px
+}
+
+input#btn-enviarMail.boton{
+	font-size: 35px
+}
+.tareas .lista li {
+	border-bottom: 1px solid #B6B6B6;
+}
+ 
+.tareas .lista li a {
+	color: #212121;
+	display: block;
+	padding: 20px 0;
+	text-decoration: none;
+}
+
+#mapa{
+	width: 100%;
+	height: 730px;
+	
+}
+}

@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)https://openlibra.com/es/page/public-api -->
+<html xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://ogp.me/ns/fb#" lang="es" class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin=""><link href="./OpenLibra _ API Pública_files/css" rel="stylesheet" type="text/css"> <link rel="stylesheet" href="./OpenLibra _ API Pública_files/bootstrap.css"><link rel="stylesheet" href="./OpenLibra _ API Pública_files/main.css">   <title>OpenLibra | API Pública</title><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="author" content="EtnasSoft"><meta name="keywords" content="eBooks, Books, eReaders, Creative Commons, Copyleft, free"><meta name="description" content="OpenLibra. La Biblioteca Libre que estabas esperando"><meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0"><link rel="apple-touch-icon" href="https://openlibra.com/apple-touch-icon.png"><link rel="apple-touch-icon" sizes="57x57" href="https://openlibra.com/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="72x72" href="https://openlibra.com/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="114x114" href="https://openlibra.com/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="144x144" href="https://openlibra.com/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="57x57" href="https://openlibra.com/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="https://openlibra.com/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="114x114" href="https://openlibra.com/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="152x152" href="https://openlibra.com/apple-touch-icon-152x152.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-barstyle" content="black-translucent"><link rel="apple-touch-icon" href="https://openlibra.com/apple-touch-icon-152x152.png"><meta name="mobile-web-app-capable" content="yes"><link rel="shortcut icon" sizes="196x196" href="https://openlibra.com/apple-touch-icon-152x152.png"> <link rel="canonical" href="https://openlibra.com/es/page/public-api"><link rel="alternate" href="https://openlibra.com/es/page/public-api" hreflang="x-default"><link rel="alternate" href="https://openlibra.com/es/page/public-api" hreflang="es"> <link rel="alternate" href="https://openlibra.com/en/page/public-api" hreflang="en"> <meta name="geo.region" content="ES-M"><meta name="geo.placename" content="Madrid"><meta name="geo.position" content="40.428977;-3.662704"><meta name="ICBM" content="40.428977;-3.662704"><meta name="DC.Title" content="OpenLibra | API Pública"><meta name="DC.Description" content="OpenLibra. La Biblioteca Libre que estabas esperando"><meta name="DC.Language" content="es_ES"><meta name="DC.Publisher" content="OpenLibra"><meta name="DC.Creator" content="EtnasSoft"><meta property="og:site_name" content="OpenLibra"><meta property="og:type" content="article"><meta property="og:url" content="https://openlibra.com/es/page/public-api"><meta property="og:title" content="API Pública"><meta property="og:description" content="OpenLibra. La Biblioteca Libre que estabas esperando"><meta property="og:image" content="https://openlibra.blob.core.windows.net/assets/images/layout/openlibra-brand-square.png"><meta name="msvalidate.01" content="CFC75434E57AD5E44C8F78E2BF393F9B"><link rel="search" type="application/opensearchdescription+xml" title="Motor de Búsqueda OpenLibra" href="https://openlibra.com/opensearch">  <link rel="stylesheet" href="./OpenLibra _ API Pública_files/prism.css">  <noscript>&lt;meta http-equiv="X-Frame-Options" content="deny"/&gt;</noscript> <noscript>&lt;meta http-equiv="refresh" content="0; URL=https://openlibra.com/es/page/no-javascript/"/&gt;</noscript>  <style type="text/css"></style></head><body class="single-page">     <div id="login-modal" class="pop-modal close-pop-modal login-modal" data-close="hide"><div class="pop-modal-content"><div class="pop-modal-body loading-dialog"> <button class="x-button close-pop-modal"><i class="icon-clear-thin" aria-label="Cerrar"></i></button><div class="skip"><span class="close-pop-modal">Saltar »</span></div><div class="loader mt30"><p class="h4 title">Cargando...</p><div class="slider"><div class="line"></div><div class="break dot1"></div><div class="break dot2"></div><div class="break dot3"></div></div></div><header><p class="h1">Debes iniciar sesión para hacer esto.</p></header> <div class="tab-container"><section id="login-links" data-role="tab"><div class="connect-btns"> <button type="button" class="btn ol-login btn-ol-facebook connect-action" data-network="facebook"><i class="icon-facebook" aria-hidden="true"></i> <span class="social-service-name ml5">Facebook</span></button> <button type="button" class="btn ol-login btn-ol-twitter connect-action" data-network="twitter"><i class="icon-twitter" aria-hidden="true"></i> <span class="social-service-name ml5">Twitter</span></button> <button class="btn connect-action btn-ol-google-plus" data-toggle="login-widget-form" data-effect="toggle" data-duration="0" data-role="tab" type="button"><i class="icon-email-o" aria-hidden="true"></i><span class="social-service-name ml5">Email</span></button></div></section><section id="login-widget-form" data-role="tab" class="ocult"><form data-process="xhr" data-action="login_by_email" role="form"> <input type="hidden" class="input-text" id="redirect" name="redirect" value="https%3A%2F%2Fopenlibra.com%2Fes%2Fpage%2Fpublic-api" autocomplete="off"><div class="row"><div class="col-xs-12 col-sm-6 form-group"> <label for="sign-in-username-email">Email o nombre de usuario</label> <input type="text" id="sign-in-username-email" name="sign-in-username-email" class="form-control search-input" placeholder="Escribe tu nombre de usuario o email" required="" maxlength="24" tabindex="1" autocapitalize="off" autocorrect="off"></div><div class="col-xs-12 col-sm-6 form-group"> <label for="sign-in-password">Contraseña</label> <a class="control-option" href="https://openlibra.com/es/account/forgot_password" tabindex="3" aria-label="Recupera tu contraseña">¿Has olvidado tu contraseña?</a> <input type="password" id="sign-in-password" name="sign-in-password" class="form-control search-input" placeholder="Escribe tu contraseña" required="" tabindex="2" autocapitalize="off" autocorrect="off"></div></div> <input type="hidden" name="general"><p class="alert alert-danger error-form xhr-error-form-general mt20 e100"></p><div class="form-group button-container mt20"> <button class="btn ghost btn-ol-dark" type="button" data-toggle="login-links" data-effect="toggle" data-duration="0" data-role="tab" tabindex="5">Volver</button> <button class="ladda-button btn ghost btn-ol-red ml10" type="submit" value="login" name="login" data-style="zoom-in" tabindex="4">Entrar</button></div></form></section></div><footer class="pop-modal-info text-center mt40"><p>¿No tienes una cuenta?<a class="ml5" href="https://openlibra.com/es/account/sign_up" aria-label="Acceder">Unirte es rápido y fácil</a></p></footer></div></div></div>    <div id="modal-shortcuts" class="pop-modal close-pop-modal modal-shortcuts user-modal" data-close="hide"><div class="pop-modal-content"><div class="pop-modal-body"> <button class="x-button close-pop-modal"><i class="icon-clear-thin" aria-label="Cerrar"></i></button><div class="skip"><span class="close-pop-modal">Cerrar</span></div><header><p class="h1">Atajos de teclado</p><p class="shortcuts-mode"> <span>Los atajos de teclado están </span> <button type="button" class="ladda-button btn btn-swap btn-link p0 swap-b" data-action="set_keyboard_shortcut_mode" data-style="slide-left" data-cancel-hover="true"> <span class="ladda-label"><span class="swap-text swap-a" data-xhr="mode:on"><span class="text-default">deshabilitados</span> <span class="text-hover">habilitar</span></span> <span class="swap-text swap-b" data-xhr="mode:off"><span class="text-default">habilitados</span> <span class="text-hover">deshabilitar</span></span></span></button></p></header><table class="table table-shortcuts"><tbody><tr><td class="e40">Ayuda del teclado</td><td><kbd>?</kbd></td></tr><tr><td>Buscar</td><td><kbd><span>/</span></kbd></td></tr><tr><td>Salir del modo de edición</td><td><kbd>Esc</kbd></td></tr><tr><td>Desplazarse por la paginación</td><td><kbd class="shift"><span>Shift</span></kbd> +<kbd><i class="icon-arrow-single-left" aria-label="izquierda"></i></kbd> o<kbd><i class="icon-arrow-single-right" aria-label="derecha"></i></kbd></td></tr><tr><td>Crear una nueva lista</td><td><kbd class="shift"><span>Shift</span></kbd> + <kbd>N</kbd></td></tr><tr><td>Añadir libro a lista</td><td><kbd class="shift"><span>Shift</span></kbd> + <kbd>A</kbd></td></tr><tr><td>Añadir libro a 'leer más tarde'</td><td><kbd class="shift"><span>Shift</span></kbd> + <kbd>L</kbd></td></tr><tr><td>Descargar libro</td><td><kbd class="shift"><span>Shift</span></kbd> + <kbd>S</kbd></td></tr><tr><td>Puntuar libro (de 1 a 5 estrellas)</td><td><kbd class="shift"><span>Shift</span></kbd> + <kbd>1</kbd> - <kbd>5</kbd></td></tr><tr><td>Konami Code</td><td><kbd><span>Mmmm. No lo recuerdo...</span></kbd></td></tr></tbody></table></div></div></div>   <section id="application" class="ol-cookies-warning"> <div id="ol-cookie-policy" class="policy-bar navbar-fixed-top" role="contentinfo"><div class="policy-bar-content"> <a href="https://openlibra.com/es/page/cookies-policy" role="button"><strong>OpenLibra</strong> usa cookies para asegurarte la mejor experiencia mientras navegas por la plataforma. Si continúas, asumimos que esto no te supone ningún problema. Para más información sobre nuestra Política de Cookies, pulsa aquí.</a> <button type="button" class="close btn btn-default btn-xhr" data-action="cookies_policy_approved"><i class="icon-clear-thin" aria-label="Cerrar"></i></button></div></div> <!-- # Cookie Policy Notice -->     <section id="loading_bar" class="page-loader"><div class="page-loader-bar"></div></section>  <aside class="sidebar ps-container ps-active-y" data-ps-id="99f2bd26-3a29-d8f4-1f38-0646553a3d4e"><div class="sidebar-content"> <nav id="sidebar"><a class="btn-sidebar mt10" href="https://openlibra.com/es/discover/lists"><i class="icon-indent-right" aria-hidden="true"></i> <span>Descubrir contenido</span></a> <div id="categories-content" class="sidebar-content" data-content="categories"><p class="sidebar-section-title"> Categorías <button class="expand-sidebar-options sidebar-options no-js-hidden" data-target="categories-wrapper"><i class="icon-down-micro" aria-label="Abrir o cerrar las categorías"></i></button> <button class="lines-button xs x2 sort-sidebar-options sidebar-options no-js-hidden" type="button" role="button"><span class="lines" aria-label="Ordenar"></span></button></p><div class="sidebar-sort" data-target="categories-wrapper"> <button type="button" class="ladda-button btn btn-swap swap-b" data-action="load_collection" data-xhr="itemsCollection:categories,sort:name" data-style="zoom-in"> <span class="ladda-label"><span class="swap-text swap-a" data-xhr="direction:asc">A - Z<i class="icon-arrow-single-up" aria-label="Positivo"></i></span> <span class="swap-text swap-b" data-xhr="direction:desc">A - Z<i class="icon-arrow-single-down" aria-label="Negativo"></i></span></span></button> <button type="button" class="ladda-button btn btn-swap swap-b" data-action="load_collection" data-xhr="itemsCollection:categories,sort:items_count" data-style="zoom-in"> <span class="ladda-label"><span class="swap-text swap-a" data-xhr="direction:asc">Actividad<i class="icon-arrow-single-up" aria-label="Positivo"></i></span> <span class="swap-text swap-b" data-xhr="direction:desc">Actividad<i class="icon-arrow-single-down" aria-label="Negativo"></i></span></span></button></div><div id="categories-wrapper" class="sidebar-elements-wrapper"><ul id="categories">  <li class="folded"><a class="list-anchor" title="Ajedrez" data-count-items="22" data-category-name="ajedrez" data-category-id="1173" href="https://openlibra.com/es/collection/search/category/ajedrez"><i class="icon-chevron-right" aria-hidden="true"></i> Ajedrez<span class="icon-spinner icon-spin" aria-hidden="true"></span></a> <div class="metadata-container" data-category-id="1173"></div></li> <li class="folded"><a class="list-anchor" title="Arte - Bellas Artes" data-count-items="28" data-category-name="arte-bellas-artes" data-category-id="2297" href="https://openlibra.com/es/collection/search/category/arte-bellas-artes"><i class="icon-chevron-right" aria-hidden="true"></i> Arte - Bellas Artes<span class="icon-spinner icon-spin" aria-hidden="true"></span></a> <div class="metadata-container" data-category-id="2297"></div></li> <li class="folded"><a class="list-anchor" title="Aspectos Legales" data-count-items="61" data-category-name="libros_aspecotos_legales" data-category-id="243" href="https://openlibra.com/es/collection/search/category/libros_aspecotos_legales"><i class="icon-chevron-right" aria-hidden="true"></i> Aspectos Legales<span class="icon-spinner icon-spin" aria-hidden="true"></span></a> <div class="metadata-container" data-category-id="243"></div></li> <li class="folded"><a class="list-anchor" title="Bases de datos" data-count-items="47" data-category-name="bases_de_datos" data-category-id="249" href="https://openlibra.com/es/collection/search/category/bases_de_datos"><i class="icon-chevron-right" aria-hidden="true"></i> Bases de datos<span class="icon-spinner icon-spin" aria-hidden="true"></span></a> <div class="metadata-container" data-category-id="249"></div></li> <li class="folded"><a class="list-anchor" title="Ciencia" data-count-items="669" data-category-name="ciencia" data-category-id="509" href="https://openlibra.com/es/collection/search/category/ciencia"><i class="icon-chevron-right" aria-hidden="true"></i> Ciencia<span class="icon-spinner icon-spin" aria-hidden="true"></span></a> <div class="metadata-container" data-category-id="509"></div></li> <li class="folded"><a class="list-anchor" title="Cine" data-count-items="7" data-category-name="cine" data-category-id="2193" href="https://openlibra.com/es/collection/search/category/cine"><i class="icon-chevron-right" aria-hidden="true"></i> Cine<span class="icon-spinner icon-spin" aria-hidden="true"></span></a> <div class="metadata-container" data-category-id="2193"></div></li> <li class="folded"><a class="list-anchor" title="Cómics" data-count-items="15" data-category-name="comics" data-category-id="1301" href="https://openlibra.com/es/collection/search/category/comics"><i class="icon-chevron-right" aria-hidden="true"></i> Cómics<span class="icon-spinner icon-spin" aria-hidden="true"></span></a> <div class="metadata-container" data-category-id="1301"></div></li> <li class="folded"><a class="list-anchor" title="Control de Versiones" data-count-items="19" data-category-name="control_de_versiones" data-category-id="319" href="https://openlibra.com/es/collection/search/category/control_de_versiones"><i class="icon-chevron-right" aria-hidden="true"></i> Control de Versiones<span class="icon-spinner icon-spin" aria-hidden="true"></span></a> <div class="metadata-container" data-category-id="319"></div></li> <li class="folded"><a class="list-anchor" title="Desarrollo Web" data-count-items="64" data-category-name="desarrollo_web" data-category-id="341" href="https://openlibra.com/es/collection/search/category/desarrollo_web"><i class="icon-chevron-right" aria-hidden="true"></i> Desarrollo Web<span class="icon-spinner icon-spin" aria-hidden="true"></span></a> <div class="metadata-container" data-category-id="341"></div></li> <li class="folded"><a class="list-anchor" title="Diseño / 3D" data-count-items="106" data-category-name="diseno_3d" data-category-id="335" href="https://openlibra.com/es/collection/search/category/diseno_3d"><i class="icon-chevron-right" aria-hidden="true"></i> Diseño / 3D<span class="icon-spinner icon-spin" aria-hidden="true"></span></a> <div class="metadata-container" data-category-id="335"></div></li> <li class="folded"><a class="list-anchor" title="Educación" data-count-items="347" data-category-name="educacion-biblioteca" data-category-id="1085" href="https://openlibra.com/es/collection/search/category/educacion-biblioteca"><i class="icon-chevron-right" aria-hidden="true"></i> Educación<span class="icon-spinner icon-spin" aria-hidden="true"></span></a> <div class="metadata-container" data-category-id="1085"></div></li> <li class="folded"><a class="list-anchor" title="Electrónica" data-count-items="22" data-category-name="electronica-biblioteca" data-category-id="4425" href="https://openlibra.com/es/collection/search/category/electronica-biblioteca"><i class="icon-chevron-right" aria-hidden="true"></i> Electrónica<span class="icon-spinner icon-spin" aria-hidden="true"></span></a> <div class="metadata-container" data-category-id="4425"></div></li> <li class="folded"><a class="list-anchor" title="Ensayos / Novelas" data-count-items="92" data-category-name="ensayos_y_novelas" data-category-id="215" href="https://openlibra.com/es/collection/search/category/ensayos_y_novelas"><i class="icon-chevron-right" aria-hidden="true"></i> Ensayos / Novelas<span class="icon-spinner icon-spin" aria-hidden="true"></span></a> <div class="metadata-container" data-category-id="215"></div></li> <li class="folded"><a class="list-anchor" title="Filosofía" data-count-items="11" data-category-name="filosofia-biblioteca" data-category-id="2857" href="https://openlibra.com/es/collection/search/category/filosofia-biblioteca"><i class="icon-chevron-right" aria-hidden="true"></i> Filosofía<span class="icon-spinner icon-spin" aria-hidden="true"></span></a> <div class="metadata-container" data-category-id="2857"></div></li> <li class="folded"><a class="list-anchor" title="Geografía / Turismo" data-count-items="2" data-category-name="geografia-turismo" data-category-id="5511" href="https://openlibra.com/es/collection/search/category/geografia-turismo"><i class="icon-chevron-right" aria-hidden="true"></i> Geografía / Turismo<span class="icon-spinner icon-spin" aria-hidden="true"></span></a> <div class="metadata-container" data-category-id="5511"></div></li> <li class="folded"><a class="list-anchor" title="Historia" data-count-items="14" data-category-name="historia-biblioteca" data-category-id="5339" href="https://openlibra.com/es/collection/search/category/historia-biblioteca"><i class="icon-chevron-right" aria-hidden="true"></i> Historia<span class="icon-spinner icon-spin" aria-hidden="true"></span></a> <div class="metadata-container" data-category-id="5339"></div></li> <li class="folded"><a class="list-anchor" title="Idiomas" data-count-items="29" data-category-name="idiomas" data-category-id="2113" href="https://openlibra.com/es/collection/search/category/idiomas"><i class="icon-chevron-right" aria-hidden="true"></i> Idiomas<span class="icon-spinner icon-spin" aria-hidden="true"></span></a> <div class="metadata-container" data-category-id="2113"></div></li> <li class="folded"><a class="list-anchor" title="Información" data-count-items="194" data-category-name="informacion" data-category-id="1077" href="https://openlibra.com/es/collection/search/category/informacion"><i class="icon-chevron-right" aria-hidden="true"></i> Información<span class="icon-spinner icon-spin" aria-hidden="true"></span></a> <div class="metadata-container" data-category-id="1077"></div></li> <li class="folded"><a class="list-anchor" title="Marketing / Business" data-count-items="147" data-category-name="marketing_y_business" data-category-id="201" href="https://openlibra.com/es/collection/search/category/marketing_y_business"><i class="icon-chevron-right" aria-hidden="true"></i> Marketing / Business<span class="icon-spinner icon-spin" aria-hidden="true"></span></a> <div class="metadata-container" data-category-id="201"></div></li> <li class="folded"><a class="list-anchor" title="Metodologías Ágiles" data-count-items="46" data-category-name="metodologias_agiles" data-category-id="203" href="https://openlibra.com/es/collection/search/category/metodologias_agiles"><i class="icon-chevron-right" aria-hidden="true"></i> Metodologías Ágiles<span class="icon-spinner icon-spin" aria-hidden="true"></span></a> <div class="metadata-container" data-category-id="203"></div></li> <li class="folded"><a class="list-anchor" title="Multimedia" data-count-items="18" data-category-name="multimedia-biblioteca" data-category-id="2971" href="https://openlibra.com/es/collection/search/category/multimedia-biblioteca"><i class="icon-chevron-right" aria-hidden="true"></i> Multimedia<span class="icon-spinner icon-spin" aria-hidden="true"></span></a> <div class="metadata-container" data-category-id="2971"></div></li> <li class="folded"><a class="list-anchor" title="Música" data-count-items="31" data-category-name="musica-biblioteca" data-category-id="3097" href="https://openlibra.com/es/collection/search/category/musica-biblioteca"><i class="icon-chevron-right" aria-hidden="true"></i> Música<span class="icon-spinner icon-spin" aria-hidden="true"></span></a> <div class="metadata-container" data-category-id="3097"></div></li> <li class="folded"><a class="list-anchor" title="Programación" data-count-items="934" data-category-name="libros_programacion" data-category-id="205" href="https://openlibra.com/es/collection/search/category/libros_programacion"><i class="icon-chevron-right" aria-hidden="true"></i> Programación<span class="icon-spinner icon-spin" aria-hidden="true"></span></a> <div class="metadata-container" data-category-id="205"></div></li> <li class="folded"><a class="list-anchor" title="Redes y Sys Admin" data-count-items="56" data-category-name="redes_y_sysadmins" data-category-id="359" href="https://openlibra.com/es/collection/search/category/redes_y_sysadmins"><i class="icon-chevron-right" aria-hidden="true"></i> Redes y Sys Admin<span class="icon-spinner icon-spin" aria-hidden="true"></span></a> <div class="metadata-container" data-category-id="359"></div></li> <li class="folded"><a class="list-anchor" title="Retroinformática" data-count-items="239" data-category-name="retroinformatica-biblioteca" data-category-id="807" href="https://openlibra.com/es/collection/search/category/retroinformatica-biblioteca"><i class="icon-chevron-right" aria-hidden="true"></i> Retroinformática<span class="icon-spinner icon-spin" aria-hidden="true"></span></a> <div class="metadata-container" data-category-id="807"></div></li> <li class="folded"><a class="list-anchor" title="Revistas" data-count-items="881" data-category-name="revistas" data-category-id="1061" href="https://openlibra.com/es/collection/search/category/revistas"><i class="icon-chevron-right" aria-hidden="true"></i> Revistas<span class="icon-spinner icon-spin" aria-hidden="true"></span></a> <div class="metadata-container" data-category-id="1061"></div></li> <li class="folded"><a class="list-anchor" title="Robótica" data-count-items="33" data-category-name="robotica" data-category-id="2239" href="https://openlibra.com/es/collection/search/category/robotica"><i class="icon-chevron-right" aria-hidden="true"></i> Robótica<span class="icon-spinner icon-spin" aria-hidden="true"></span></a> <div class="metadata-container" data-category-id="2239"></div></li> <li class="folded"><a class="list-anchor" title="SEO / SEM" data-count-items="15" data-category-name="seo_y_sem" data-category-id="343" href="https://openlibra.com/es/collection/search/category/seo_y_sem"><i class="icon-chevron-right" aria-hidden="true"></i> SEO / SEM<span class="icon-spinner icon-spin" aria-hidden="true"></span></a> <div class="metadata-container" data-category-id="343"></div></li> <li class="folded"><a class="list-anchor" title="Software General" data-count-items="39" data-category-name="software-general" data-category-id="1499" href="https://openlibra.com/es/collection/search/category/software-general"><i class="icon-chevron-right" aria-hidden="true"></i> Software General<span class="icon-spinner icon-spin" aria-hidden="true"></span></a> <div class="metadata-container" data-category-id="1499"></div></li> <li class="folded"><a class="list-anchor" title="Software Libre" data-count-items="218" data-category-name="libros_software_libre" data-category-id="241" href="https://openlibra.com/es/collection/search/category/libros_software_libre"><i class="icon-chevron-right" aria-hidden="true"></i> Software Libre<span class="icon-spinner icon-spin" aria-hidden="true"></span></a> <div class="metadata-container" data-category-id="241"></div></li> <li class="folded"><a class="list-anchor" title="Textos Académicos" data-count-items="41" data-category-name="textos-academicos-biblioteca" data-category-id="893" href="https://openlibra.com/es/collection/search/category/textos-academicos-biblioteca"><i class="icon-chevron-right" aria-hidden="true"></i> Textos Académicos<span class="icon-spinner icon-spin" aria-hidden="true"></span></a> <div class="metadata-container" data-category-id="893"></div></li>  </ul></div></div>  <div id="featured-lists" class="sidebar-content" data-content="featured"><p class="sidebar-section-title">Listas Destacadas</p><div class="lists-wrapper sidebar-elements-wrapper"><ul id="featured"> <li data-collection-name="best"><a class="list-anchor" href="https://openlibra.com/es/collection/featured/best"><i class="icon-fire" aria-hidden="true"></i> Libros más descargados</a></li><li data-collection-name="education"><a class="list-anchor" href="https://openlibra.com/es/collection/featured/education"><i class="glyphicon glyphicon-education" aria-hidden="true"></i> Tops en Educación</a></li><li data-collection-name="science"><a class="list-anchor" href="https://openlibra.com/es/collection/featured/science"><i class="icon-chemistry" aria-hidden="true"></i> Tops en Ciencia</a></li><li data-collection-name="programming"><a class="list-anchor" href="https://openlibra.com/es/collection/featured/programming"><i class="glyphicon glyphicon-console" aria-hidden="true"></i> Tops en Programación</a></li></ul></div></div> </nav> <!-- #Sidebars --></div><div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px; display: block;"><div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; height: 535px; right: 3px; display: block;"><div class="ps-scrollbar-y" style="top: 0px; height: 150px;"></div></div></aside>  <div class="main-content no-filters">  <nav id="header" class="navbar navbar-inverse navbar-fixed-top" role="navigation"><header class="navbar-header">  <button class="menu-button btn btn-default" aria-label="Toggle Navigation" role="button" type="button"><span class="glyphicon glyphicon-menu-hamburger"></span></button>  <a class="navbar-toggle login-button" href="https://openlibra.com/es/account/sign_in" title="Entrar"><span class="sr-only">Entrar</span><span class="icon-login"></span></a>  <button class="navbar-toggle" data-toggle="header-search-form" data-target-class="in" data-autofocus=".tt-input"> <span class="sr-only">Alternar navegación</span><span class="icon-search"></span></button> <a class="navbar-brand" title="OpenLibra. La Biblioteca Libre que estabas esperando." href="https://openlibra.com/es/">OpenLibra<i class="brand-icon" aria-hidden="true"></i></a></header><div class="no-js-hidden"> <ul class="nav navbar-nav navbar-right hidden-xs"><li><a href="https://openlibra.com/es/account/sign_in" class="login-button"><i class="icon-login" aria-hidden="true"></i> <span>Registro /</span> Entrar</a></li></ul> </div><nav id="header-search-form" class="navbar-collapse collapse search-form header-search-form"><form action="https://openlibra.com/es/collection/search/" method="get" class="navbar-form navbar-left main-search-form"><div class="input-group"> <button type="submit" class="search-button"><i class="icon-search" aria-label="Buscar"></i></button> <label class="screenreader-helper" for="header-main-search">Introduce tus palabras clave</label> <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input class="form-control search-input black-field tt-hint" data-role="search-input" type="search" value="" autocapitalize="off" autocorrect="off" readonly="" autocomplete="off" spellcheck="false" tabindex="-1" dir="ltr" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1; background: none 0% 0% / auto repeat scroll padding-box border-box rgb(40, 48, 59);"><input id="header-main-search" class="form-control search-input black-field tt-input" data-role="search-input" type="search" name="term" value="" placeholder="Título, autor, editor o palabra clave..." autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: &quot;Open Sans&quot;, &quot;Segoe UI&quot;, &quot;Century Gothic&quot;, CenturyGothic, AppleGothic, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div class="tt-dataset tt-dataset-default"></div><div class="tt-dataset tt-dataset-books"></div><div class="tt-dataset tt-dataset-authors"></div><div class="tt-dataset tt-dataset-topics"></div></div></span><i class="icon-clear-thin clear-input" aria-hidden="true"></i> <input type="submit" class="hidden"></div></form></nav></nav> <main id="main" role="main" class="">  <div id="main-content" class="extra-left-column-present"><div id="content"><section class="regular-content-wrapper">  <div class="content-fixed page-section navigation-sidebar">  <div id="navigator-bar"><div class="navigator-content"><header class="overflow"><p class="h3">API PÚBLICA</p>  <button class="navigator-menu-button btn btn-transparent flat" data-toggle="page-navigator-menu" data-target-class="open"><i class="glyphicon glyphicon-menu-hamburger" aria-label="Opciones"></i></button> </header> <section id="page-navigator-menu" class="navigator-menu-list"><ul class="navigator-links"> <li><a data-hash="item-1" href="https://openlibra.com/es/page/public-api#item-1">Introducción</a></li> <li><a data-hash="item-2" href="https://openlibra.com/es/page/public-api#item-2">Javascript / JSONP</a></li> <li><a data-hash="item-3" href="https://openlibra.com/es/page/public-api#item-3">Parámetros</a></li> <li><a data-hash="item-4" href="https://openlibra.com/es/page/public-api#item-4">Métodos</a></li> <li><a data-hash="item-5" href="https://openlibra.com/es/page/public-api#item-5">Ejemplos de uso</a></li> </ul></section> </div></div> <div class="page-container"><div class="page-container-content text-format">  <h1>API PUBLICA</h1>
+<hr>
+<section id="item-1">
+<h2>Introducción</h2>
+<p>OpenLibra dispone de un ligero servicio web con el que es posible acceder de forma remota a la mayoría de los datos de su catálogo bibliográfico.</p>
+<p>Mediante una petición AJAX (Javascript), se puede establecer una conexión directa con el sistema y obtener resultados en tiempo real sobre la consulta. El sistema devuelve un objeto JSON con el que es sencillo trabajar directamente en Javascript o en otros lenguajes de servidor como PHP o Java.</p>
+<p>Esta primera versión del API facilita la creación de clientes independientes para OpenLibra, como por ejemplo de escritorio, que permitan rastrear el catálogo en tiempo real en busca de novedades, crear notificaciones con las actualizaciones, clasificar y buscar libros según un criterio concreto o facilitar la lectura de documentos directamente online sin navegador.</p>
+</section>
+
+<section id="item-2">
+<h2>Javascript / JSONP</h2>
+<p>El acceso a la información se realiza mediante una petición AJAX (Javascript) a los servidores de OpenLibra los cuales devuelven un objeto JSON con los datos encontrados.</p>
+<p>Ya que por temas de seguridad, los servidores no permiten llamadas AJAX entre dominios diferentes, hay que utilizar el complemento JSONP. Esto quiere decir que, en el callback de la llamada AJAX, va añadida una función Javascript para manejar los datos devueltos. Con las actuales bibliotecas de tipo jQuery, la forma de acceso resulta muy sencilla.</p>
+<p>Un ejemplo típico de petición utilizando la citada jQuery es el siguiente:</p>
+
+<pre class=" language-javascript"><code class=" language-javascript">$<span class="token punctuation">.</span><span class="token function">getJSON</span><span class="token punctuation">(</span> <span class="token string">'http://www.etnassoft.com/api/v1/get/?id=589&amp;callback=?'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span> results <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> <span class="token string">'Search Result(s): '</span><span class="token punctuation">,</span> results <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+
+<p>La petición anterior buscará en cualquier caso el libro con el ID número 589 en la base de datos. El sistema devolverá un objeto JSON como el siguiente:</p>
+
+<pre class="mb30 language-javascript"><code class=" language-javascript"><span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    <span class="token string">"ID"</span><span class="token punctuation">:</span><span class="token string">"589"</span><span class="token punctuation">,</span>
+    <span class="token string">"title"</span><span class="token punctuation">:</span><span class="token string">"Dise\u00f1o \u00c1gil con TDD"</span><span class="token punctuation">,</span>
+    <span class="token string">"author"</span><span class="token punctuation">:</span><span class="token string">"Carlos Bl\u00e9 Jurados y autores"</span><span class="token punctuation">,</span>
+    <span class="token string">"content"</span><span class="token punctuation">:</span><span class="token string">""</span><span class="token punctuation">,</span>
+    <span class="token string">"content_short"</span><span class="token punctuation">:</span><span class="token string">"Dedicas una gran parte de tu tiempo de desarrollo..."</span><span class="token punctuation">,</span>
+    <span class="token string">"publisher"</span><span class="token punctuation">:</span><span class="token string">"www.iExpertos.com"</span><span class="token punctuation">,</span>
+    <span class="token string">"publisher_date"</span><span class="token punctuation">:</span><span class="token string">"2010"</span><span class="token punctuation">,</span>
+    <span class="token string">"pages"</span><span class="token punctuation">:</span><span class="token string">"309"</span><span class="token punctuation">,</span>
+    <span class="token string">"language"</span><span class="token punctuation">:</span><span class="token string">"spanish"</span><span class="token punctuation">,</span>
+    <span class="token string">"url_details"</span><span class="token punctuation">:</span><span class="token string">"https:\/\/www.openlibra.com\/book\/diseno-agil-con-tdd\/"</span><span class="token punctuation">,</span>
+    <span class="token string">"url_download"</span><span class="token punctuation">:</span><span class="token string">"https:\/\/books.openlibra.com\/packed\/"</span><span class="token punctuation">,</span>
+    <span class="token string">"url_read_online"</span><span class="token punctuation">:</span><span class="token string">"https:\/\/books.openlibra.com\/pdf\/"</span><span class="token punctuation">,</span>
+    <span class="token string">"cover"</span><span class="token punctuation">:</span><span class="token string">"https:\/\/books.openlibra.com\/covers\/2011\/04\/disenoAgilConTDD.jpg"</span><span class="token punctuation">,</span>
+    <span class="token string">"thumbnail"</span><span class="token punctuation">:</span><span class="token string">"http://collection.openlibra.com.s3.amazonaws.com/covers/2011/04/disenoAgilConTDD-110x153.jpg"</span><span class="token punctuation">,</span>    
+    <span class="token string">"num_comments"</span><span class="token punctuation">:</span><span class="token string">"0"</span><span class="token punctuation">,</span>
+    <span class="token string">"categories"</span><span class="token punctuation">:</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">"tags"</span><span class="token punctuation">:</span><span class="token punctuation">[</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span></code></pre>
+</section>
+
+<section id="item-3">
+<h2>Parámetros</h2>
+<div class="api-params">
+    <dl>
+        <dt>
+            <tt>id</tt>
+        </dt>
+        <dd>
+            (<button class="ladda-button btn-xhr" data-action="load_api_helper" data-xhr="type:integer" data-style=""><i>integer</i></button>) El id del libro <span><code>?id=505</code></span>
+            <dl>
+                <dd> Default: <i><code>null</code></i></dd>
+            </dl>
+        </dd>
+    </dl>
+    <dl>
+        <dt>
+            <tt>book_title</tt>
+        </dt>
+        <dd>
+            (<button class="ladda-button btn-xhr" data-action="load_api_helper" data-xhr="type:string" data-style=""><i>string</i></button>) El título del libro <span><code>?book_title=javascript</code><br><code>?book_title="eloquent javascript"</code></span>
+            <p>NOTA: Si el título son varias palabras, <strong>debe entrecomillarlo</strong>.</p>
+            <dl>
+                <dd> Default: <i><code>null</code></i></dd>
+            </dl>
+        </dd>
+    </dl>
+    <dl>
+        <dt>
+            <tt>book_author</tt>
+        </dt>
+        <dd>
+            (<button class="ladda-button btn-xhr" data-action="load_api_helper" data-xhr="type:string" data-style=""><i>string</i></button>) El autor del libro <span><code>?book_author=paenza</code><br><code>?book_author="Adrian Paenza"</code></span>
+            <p>NOTA: Si el título son varias palabras, <strong>debe entrecomillarlo</strong>.</p>
+            <dl>
+                <dd> Default: <i><code>null</code></i></dd>
+            </dl>
+        </dd>
+    </dl>
+    <dl>
+        <dt>
+            <tt>publisher</tt>
+        </dt>
+        <dd>
+            (<button class="ladda-button btn-xhr" data-action="load_api_helper" data-xhr="type:string" data-style=""><i>string</i></button>) La editorial del libro <span><code>?publisher=UOC</code><br><code>?publisher="Green Tea Press"</code></span>
+            <p>NOTA: Si el título son varias palabras, <strong>debe entrecomillarlo</strong>.</p>
+            <dl>
+                <dd> Default: <i><code>null</code></i></dd>
+            </dl>
+        </dd>
+    </dl>
+    <dl>
+        <dt>
+            <tt>publisher_date</tt>
+        </dt>
+        <dd>
+            (<button class="ladda-button btn-xhr" data-action="load_api_helper" data-xhr="type:string" data-style=""><i>string</i></button>) La fecha de publicación del libro <span><code>?publisher_date=2011</code></span>
+            <dl>
+                <dd> Default: <i><code>null</code></i></dd>
+            </dl>
+        </dd>
+    </dl>
+    <dl>
+        <dt>
+            <tt>lang</tt>
+        </dt>
+        <dd>
+            (<button class="ladda-button btn-xhr" data-action="load_api_helper" data-xhr="type:string" data-style=""><i>string</i></button>) Lenguaje del libro <span><code>?lang=english</code></span>
+            <dl>
+                <dd> Default: <i><code>all</code></i></dd>
+            </dl>
+        </dd>
+    </dl>
+    <dl>
+        <dt>
+            <tt>keyword</tt>
+        </dt>
+        <dd>
+            (<button class="ladda-button btn-xhr" data-action="load_api_helper" data-xhr="type:string" data-style=""><i>string</i></button>) Palabra clave del libro <span><code>?keyword=java</code></span>
+            <p>NOTA: Para buscar varias palabras, se pueden concatenar utilizando el signo <i>+</i></p>
+            <p>NOTA 2: Debido a las limitaciones de este parámetro, en caso de enviarse varias palabras concatenadas, <strong>la búsqueda es estricta</strong> y únicamente se devolverán aquellos resultados donde se encuentren estas palabras de forma consecutiva.</p>            
+            <div>
+                <ol>
+                    <li><code>?keyword=javascript+avanzado</code> - Se buscan aquellos libros que contengan de forma estricta la cadena <i>javascript avanzado</i>.</li>
+                </ol>
+            </div>
+            <dl>
+                <dd> Default: <i><code>null</code></i></dd>
+            </dl>
+        </dd>
+    </dl>
+    <dl>
+        <dt>
+            <tt>book_title_index</tt>
+        </dt>
+        <dd>
+            (<button class="ladda-button btn-xhr" data-action="load_api_helper" data-xhr="type:string" data-style=""><i>string</i></button>) Búsqueda por índice-prefijo <span><code>?book_title_index=a,b</code></span>
+            <p>Este parámetro permite realizar búsquedas por prefijo dentro de los títulos del catálogo. Útil para crear índices.</p>
+            <p>NOTA: La principal diferencia con <i>keyword</i> es que este argumento requiere que la cadena a buscar se encuentre al inicio de cada título.</p>
+            <p>NOTA 2: En caso de buscarse varios índices, es interesante utilizar el parámetro <i>order</i> para obtener una lista de resultados ordenada.</p>
+            <p>NOTA 3: En caso de buscarse varios índices y estar el número de resultados acotado mediante <i>num_items</i>, solo se devuelven los primeros <i>n</i> items del conjunto completo encontrado, siendo <i>n</i> el número indicado en <i>num_items</i>.</p>            
+            <div>
+                Este parámetro acepta varios índices separados por comas, lo cual indica al sistema que tiene que buscar objetos que coincidan con cada criterio/prefijo:
+                <ol>
+                    <li><code>book_title_index=z</code> - Se buscan aquellos libros que únicamente comiencen por la letra 'z'.</li>
+                    <li><code>book_title_index=a,b</code> - Se buscan aquellos libros que comiencen por la letra 'a' y la letra 'b'.</li>
+                    <li><code>book_title_index=0,1,2,3,4,5,6,7,8,9</code> - Se buscan aquellos libros cuyo título comience por un número (entre el 0 y el 9).</li>
+                    <li><code>book_title_index=s,m&amp;num_items=100&amp;order=a_z</code> - Se buscan aquellos libros que comiencen por la letra 's' y la letra 'm'; se ordenan alfabéticamente y del conjunto total se devuelven los 100 primeros.</li>
+                </ol>
+            </div>
+            <dl>
+                <dd> Default: <i><code>null</code></i></dd>
+            </dl>
+        </dd>
+    </dl>    
+    <dl>
+        <dt>
+            <tt>category</tt>
+        </dt>
+        <dd>
+            (<button class="ladda-button btn-xhr" data-action="load_api_helper" data-xhr="type:string" data-style=""><i>string</i></button>) Categoría del libro (<button class="ladda-button btn-xhr" data-action="load_api_helper" data-xhr="type:categories" data-style="">RELACIÓN DE CATEGORÍAS</button>) <span><code>?category=programacion</code></span>
+            <dl>
+                <dd> Default: <i><code>all</code></i></dd>
+            </dl>
+        </dd>
+    </dl>
+    <dl>
+        <dt>
+            <tt>category_id</tt>
+        </dt>
+        <dd>
+            (<button class="ladda-button btn-xhr" data-action="load_api_helper" data-xhr="type:integer" data-style=""><i>integer</i></button>) ID de categoría (<button class="ladda-button btn-xhr" data-action="load_api_helper" data-xhr="type:categories" data-style="">RELACIÓN DE CATEGORÍAS</button>) <span><code>?category_id=212</code></span>
+            <dl>
+                <dd> Default: <i><code>null</code></i></dd>
+            </dl>
+        </dd>
+    </dl>    
+    <dl>
+        <dt>
+            <tt>subcategory</tt>
+        </dt>
+        <dd>
+            (<button class="ladda-button btn-xhr" data-action="load_api_helper" data-xhr="type:string" data-style=""><i>string</i></button>) Subcategorías del libro (<button class="ladda-button btn-xhr" data-action="load_api_helper" data-xhr="type:subcategories" data-style="">RELACIÓN DE SUBCATEGORÍAS</button>) <span><code>?subcategory=subversion</code></span>
+            <dl>
+                <dd> Default: <i><code>all</code></i></dd>
+            </dl>
+        </dd>
+    </dl>
+    <dl>
+        <dt>
+            <tt>subcategory_id</tt>
+        </dt>
+        <dd>
+            (<button class="ladda-button btn-xhr" data-action="load_api_helper" data-xhr="type:integer" data-style=""><i>integer</i></button>) ID de subcategoría (<button class="ladda-button btn-xhr" data-action="load_api_helper" data-xhr="type:subcategories" data-style="">RELACIÓN DE SUBCATEGORÍAS</button>) <span><code>?subcategory_id=211</code></span>
+            <dl>
+                <dd> Default: <i><code>null</code></i></dd>
+            </dl>
+        </dd>
+    </dl>
+    <dl>
+        <dt>
+            <tt>any_tags</tt>
+        </dt>
+        <dd>
+            (<button class="ladda-button btn-xhr" data-action="load_api_helper" data-xhr="type:array" data-style=""><i>array</i></button>) Etiquetas que puede contener el libro <span><code>?any_tags=[Google, SEO, SEM]</code></span>
+            <p>NOTA: Se buscarán aquellos libros que pertenezcan al menos a una etiqueta.</p>
+            <dl>
+                <dd> Default: <i><code>null</code></i></dd>
+            </dl>
+        </dd>
+    </dl>
+    <dl>
+        <dt>
+            <tt>results_range</tt>
+        </dt>
+        <dd>
+            (<button class="ladda-button btn-xhr" data-action="load_api_helper" data-xhr="type:integer" data-style=""><i>integer</i></button>) Paginación de los resultados.<br>Este parámetro permite obtener segmentos concretos dentro del conjunto de resultados encontrados, siendo especialmente útil para crear una paginación.<span><code>?results_range=0,10</code></span>            
+            <div>
+                Este parámetro acepta dos argumentos siendo el segundo opcional. El primero indica a partir de qué objeto se envía el resultado encontrado, mientras que el segundo indica cuántos objetos se van a enviar:
+                <ol>
+                    <li><code>results_range=0,10</code> - Se envían los 10 primeros resultados encontrados (empezando desde el resultado 0).</li>
+                    <li><code>results_range=10,10</code> - Se envían los siguientes 10 resultados encontrados (se comienza desde el item 10).</li>
+                    <li><code>results_range=20,10</code> - Se envían los siguientes 10 resultados encontrados (comenzando desde el item 20).</li>
+                    <li><code>results_range=30&amp;num_items=20</code> - <strong>Sintaxis alternativa:</strong> se envían los <i>n</i> siguientes resultados siendo <i>n</i> el número definido mediante el parámetro <i>num_items</i> (por defecto, 10).</li>
+                </ol>
+            </div>
+            <dl>
+                <dd> Default: <i><code>null</code></i></dd>
+            </dl>
+        </dd>
+    </dl>
+    <dl>
+        <dt>
+            <tt>criteria</tt>
+        </dt>
+        <dd>
+            (<button class="ladda-button btn-xhr" data-action="load_api_helper" data-xhr="type:string" data-style=""><i>string</i></button>) Criterio para crear una colección            
+            <div>
+                El criterio puede ser:
+                <ol>
+                    <li><code>most_viewed</code> - Los libros más vistos</li>
+                    <li><code>most_commented</code> - Los libros más comentados</li>                    
+                </ol>
+            </div>
+            <dl>
+                <dd> Default: <i><code>null</code></i></dd>
+            </dl>
+        </dd>
+    </dl>
+    <dl>
+        <dt>
+            <tt>order</tt>
+        </dt>
+        <dd>
+            (<button class="ladda-button btn-xhr" data-action="load_api_helper" data-xhr="type:string" data-style=""><i>string</i></button>) Filtro para ordenar los resultados            
+            <div>
+                Los filtros pueden ser:
+                <ol>
+                    <li><code>a_z</code> - Ordenación alfabética normal (A-Z)</li>
+                    <li><code>z_a</code> - Ordenación alfabética inversa (Z-A)</li>
+                    <li><code>newest</code> - Ordenación cronológica (el más nuevo primero)</li>
+                    <li><code>oldest</code> - Ordenación cronológica (el más antiguo primero)</li>
+                </ol>
+            </div>
+            <dl>
+                <dd> Default: <i><code>newest</code></i></dd>
+            </dl>
+        </dd>
+    </dl>
+    <dl>
+        <dt>
+            <tt>since</tt>
+        </dt>
+        <dd>
+            (<button class="ladda-button btn-xhr" data-action="load_api_helper" data-xhr="type:string" data-style=""><i>string</i></button>) En catálogo de OpenLibra desde...            
+            <div>
+                Las cadenas pueden ser:
+                <ol>
+                    <li><code>today</code> - Libros incorporados en el día actual</li>
+                    <li><code>last_week</code> - Libros incorporados durante la última semana</li>
+                    <li><code>last_month</code> - Libros incorporados durante el último mes</li>
+                    <li><code>last_year</code> - Libros incorporados durante el último año</li>
+                </ol>
+            </div>
+            <dl>
+                <dd> Default: <i><code>none</code></i></dd>
+            </dl>
+        </dd>
+    </dl>
+    <dl>
+        <dt>
+            <tt>num_items</tt>
+        </dt>
+        <dd>
+            (<button class="ladda-button btn-xhr" data-action="load_api_helper" data-xhr="type:integer" data-style=""><i>integer</i></button>) Número de libros a mostrar <span><code>?num_items=25</code></span>
+            <dl>
+                <dd> Default: <i><code>10</code></i></dd>
+            </dl>
+        </dd>
+    </dl>
+    <dl>
+        <dt>
+            <tt>count_items</tt>
+        </dt>
+        <dd>
+            (<button class="ladda-button btn-xhr" data-action="load_api_helper" data-xhr="type:boolean" data-style=""><i>boolean</i></button>) Número items devueltos.<br>En lugar de devolver todos los detalles de una consulta, muestra el número total de objetos encontrados. Útil para habilitar una paginación de resultados o para testing.<span><code>?count_items=true</code></span>
+            <dl>
+                <dd> Default: <i><code>false</code></i></dd>
+            </dl>
+        </dd>
+    </dl>
+    <dl>
+        <dt>
+            <tt>decode</tt>
+        </dt>
+        <dd>
+            (<button class="ladda-button btn-xhr" data-action="load_api_helper" data-xhr="type:boolean" data-style=""><i>boolean</i></button>) Normaliza la codificación.<br>Normalización de caracteres (UTF-8) a lo largo de todo el objeto de respuesta. Por defecto, y para mantener la retrocompatibilidad, el parámetro está desactivado.<span><code>?decode=true</code></span>
+            <dl>
+                <dd> Default: <i><code>false</code></i></dd>
+            </dl>
+        </dd>
+    </dl>
+</div>
+</section>
+
+<section id="item-4">
+<h2>Métodos</h2>
+<p>Sí, estos métodos se han añadido a posteriori y no son muy elegantes. Para la próxima v2 de la API, prometemos una API REST en condiciones ;)</p>
+<div class="api-params">
+    <dl>
+        <dt>
+            <tt>get_categories</tt>
+        </dt>
+        <dd>
+            (<button class="ladda-button btn-xhr" data-action="load_api_helper" data-xhr="type:string" data-style=""><i>string</i></button>) Devuelve todas las categorías 
+                <span><code>?get_categories=all</code></span>
+            <dl>
+                <dd> Default: <i><code>none</code></i></dd>
+            </dl>
+        </dd>
+    </dl>
+    <dl>
+        <dt>
+            <tt>get_subcategories_by_category_ID</tt>
+        </dt>
+        <dd>
+            (<button class="ladda-button btn-xhr" data-action="load_api_helper" data-xhr="type:integer" data-style=""><i>integer</i></button>) Devuelve todas las subcategorías que pertenecen a un ID de categoría dado
+                <span><code>?get_subcategories_by_category_ID=677</code></span>
+            <dl>
+                <dd> Default: <i><code>none</code></i></dd>
+            </dl>
+        </dd>
+    </dl>
+</div>
+</section>
+
+<section id="item-5" class="coding">
+<h2>Ejemplos de uso</h2>
+<p>Recuperar un libro mediante su ID</p>
+<pre class=" language-http"><code class=" language-http"><span class="token keyword">http:</span>//www.etnassoft.com/api/v1/get/?id=589</code></pre>
+
+<p>Recuperar los libros más vistos de la categoria <em>programación</em></p>
+<pre class=" language-http"><code class=" language-http"><span class="token keyword">http:</span>//www.etnassoft.com/api/v1/get/?category=libros_programacion&amp;criteria=most_viewed</code></pre>
+
+<p>Recuperar los libros más recientes etiquetados como <em>HTML</em>, <em>CSS</em> o <em>Javascript</em></p>
+<pre class=" language-http"><code class=" language-http"><span class="token keyword">http:</span>//www.etnassoft.com/api/v1/get/?any_tags=[html,css,javascript]&amp;order=newest</code></pre>
+
+<p>Recuperar los libros que tengan en algún campo el término <em>Javascript</em> y se hayan publicado durante 2011</p>
+<pre class=" language-http"><code class=" language-http"><span class="token keyword">http:</span>//www.etnassoft.com/api/v1/get/?keyword=javascript&amp;publisher_date=2011</code></pre>
+
+<p>Recuperar todos los libros escritos por <em>Adrián Paenza</em></p>
+<pre class=" language-http"><code class=" language-http"><span class="token keyword">http:</span>//www.etnassoft.com/api/v1/get/?book_author=adrian_paenza</code></pre>
+</section></div></div></div> </section></div></div><footer id="footer" role="contentinfo">  <div id="footer-content"><div id="footer-brand"><div role="banner"> <img class="footer-logo" src="./OpenLibra _ API Pública_files/openlibra-logo.png" alt="OpenLibra"><form data-process="xhr" data-action="update_user_language" id="update_user_language" class="form form-horizontal form user-profile-form" role="form"> <input type="hidden" name="current-url" value="https://openlibra.com/es/page/public-api"> <select id="lang-selector" name="new-language" class="form-control chosenable lang-selector" autocomplete="off" style="display: none;"> <option value="es" selected="selected">Español (España)</option> <option value="en">English</option> </select><div class="chosen-container chosen-container-single chosen-container-single-nosearch" style="width: 325px;" title="" id="lang_selector_chosen"><a class="chosen-single" tabindex="-1"><span>Español (España)</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off" readonly=""></div><ul class="chosen-results"></ul></div></div><noscript>&lt;style&gt;
+                            #lang-selector { float: left; margin-left: 30px; max-width: 270px; }
+                        &lt;/style&gt; &lt;button type="submit" name="form-lang" value="submit" class="btn btn-default"&gt;Change&lt;/button&gt;</noscript></form></div></div><div class="nav-grouping"><h3><a class="collapsed" data-target="#footer-main-links" data-toggle="collapse" aria-owns="footer-main-links">OpenLibra</a></h3><ul class="collapse" id="footer-main-links" aria-expanded="true"> <li><a title="Síguenos en Twitter" href="https://twitter.com/openlibra" target="_blank">En Twitter</a></li> <li><a title="Construye tu canal RSS" href="https://openlibra.com/es/page/feed-selector">RSS / Feeds</a></li> <li><a title="Sala de Prensa" href="https://openlibra.com/es/page/press">Sala de Prensa</a></li><li><a title="API Pública" href="https://openlibra.com/es/page/public-api">API Pública</a></li> <li><button class="btn e100" title="Atajos de teclado" data-toggle="modal-shortcuts" data-effect="toggle" data-duration="0" data-callback="fixingAppBody">Atajos de teclado</button></li> </ul></div><div class="nav-grouping"><h3><a class="collapsed" data-target="#footer-collaborate-links" data-toggle="collapse" aria-owns="footer-collaborate-links">Participar</a></h3><ul class="collapse" id="footer-collaborate-links" aria-expanded="true"><li><a title="Sobre el registro" href="https://openlibra.com/es/page/about-login">Sobre el Inicio de Sesión</a></li><li><a title="Sugerir un libro" href="https://openlibra.com/es/page/suggest">Sugerir un libro</a></li><li><a title="Hacer una donación" href="https://openlibra.com/es/page/make-a-donation">Donaciones</a></li><li><a title="Envíanos un email" href="https://openlibra.com/es/contact">Contactar</a></li><li><a title="FAQs" href="https://openlibra.com/es/page/faqs">FAQs</a></li></ul></div><div class="nav-grouping"><h3><a class="collapsed" data-target="#footer-talking-links" data-toggle="collapse" aria-owns="footer-talking-links">El Proyecto</a></h3><ul class="collapse" id="footer-talking-links" aria-expanded="true"><li><a title="Sobre el Proyecto" href="https://openlibra.com/es/page/about">Acerca de OpenLibra</a></li><li><a title="Sobre las Licencias" href="https://openlibra.com/es/page/licenses">Licencias</a></li><li><a title="Términos de Uso" href="https://openlibra.com/es/page/terms">Términos de Uso</a></li><li><a title="Política de Privacidad" href="https://openlibra.com/es/page/privacy-policy">Política de Privacidad</a></li><li><a title="Política de Cookies" href="https://openlibra.com/es/page/cookies-policy">Política de Cookies</a></li><li><a title="Limitación de responsabilidad" href="https://openlibra.com/es/page/disclaimer">Limitación de responsabilidad</a></li></ul></div></div>  <div id="colophon"><div><p><span>OpenLibra. La Biblioteca Libre que estabas esperando</span> <span><i aria-hidden="true">|</i> <a href="http://www.etnassoft.com/" target="_blank" title="EtnasSoft, Ingeniería FrontEnd, Madrid">Un proyecto de EtnasSoft</a> <i aria-hidden="true">|</i> ©2011-2017</span></p></div></div></footer></main> <div id="user-apps"><div class="loading-dialog"><span class="logo"><i class="spinner icon-spin icon-spinner" aria-hidden="true"></i></span><div class="loader"><p class="title">Cargando...</p><div class="slider"><div class="line"></div><div class="break dot1"></div><div class="break dot2"></div><div class="break dot3"></div></div></div></div><div class="user-apps-controls"> <button type="button" class="btn btn-default close-user-app">Cerrar</button></div></div></div></section>  <script async="" src="https://www.google-analytics.com/analytics.js"></script><script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "parentOrganization": "EtnasSoft",
+      "email": "info@openlibra.com",
+      "name": "OpenLibra",
+      "url": "https://openlibra.com/",
+      "logo": "https://openlibra.blob.core.windows.net/assets-files/openlibra-brand-square.png"
+    }
+    </script><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "WebSite",
+        "url": "https://openlibra.com/",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://openlibra.com/es/collection/search/{search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>   <script src="./OpenLibra _ API Pública_files/jquery.min.js.descarga"></script><script>
+            if ( typeof jQuery === 'undefined' ) {
+                document.write( unescape( '%3Cscript%20src%3D%22https://openlibra.blob.core.windows.net/assets//scripts/vendor/jquery.js%22%3E%3C/script%3E' ) );
+            }
+        </script>   <script>
+        $( 'html' ).removeClass( 'no-js' );
+    </script>    <script src="./OpenLibra _ API Pública_files/main.js.descarga"></script><script src="./OpenLibra _ API Pública_files/ol-base.es.js.descarga"></script>     <script src="./OpenLibra _ API Pública_files/desktop.js.descarga"></script>    <script type="text/javascript">$OL.baseUrl = function(){ return "https://openlibra.com/"; }
+$OL.url = function(){ return "https://openlibra.com/es"; }
+$OL.lang = function(){ return "es"; }
+$OL.app_name = function(){ return "OpenLibra"; }
+$OL.ajaxUrl = function(){ return "https://openlibra.com/es/ajax_process/"; }
+$OL.isUserLogged = function(){ return ""; }
+</script>  <script type="text/javascript" src="./OpenLibra _ API Pública_files/prism.js.descarga" charset="UTF-8"></script>
+<script type="text/javascript" src="./OpenLibra _ API Pública_files/fileinput.js.descarga" charset="UTF-8"></script>
+  <!-- # Scripts bottom --><script>hello.init( { 'facebook': '139661312754598', 'twitter': '3jkv2NtscRAv2j8U4FvQ' }, { redirect_uri: '/redirect-login', scope: 'friends', display: 'popup' } );$OL.init();$OL_Typeahead.init();$( window ).load( function () { $( 'body' ).removeClass( 'preload' ); } );</script>  <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-73759550-1', 'auto');
+  ga('send', 'pageview');</script><style>#content > #center > .dose > .dosesingle,
+#content > #right > .dose > .dosesingle,
+#main-content > [style="padding:10px 0 0 0 !important;"],
+#header + #content > #left > #rlblock_left
+{display:none !important;}</style></body></html>
